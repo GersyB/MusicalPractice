@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="e08zu8.musicpractice.LaunchActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="263dp"
+            android:layout_height="252dp"
+            android:layout_gravity="center"
+            android:src="@drawable/launchicon" />
+    </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:src="@drawable/begin"
+            android:scaleType="fitCenter"
+            android:background="#000000"/>
+
+        <ImageButton
+            android:id="@+id/btnOpt"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:src="@drawable/settings"
+            android:scaleType="fitCenter"
+            android:background="#000000"/>
+
+</LinearLayout>
